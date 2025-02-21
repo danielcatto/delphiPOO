@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, pessoa;
 
 type
-  TForm1 = class(TForm)
+  TfrmPrincipal = class(TForm)
     Memo1: TMemo;
     btnCalcularLimite: TButton;
     Label1: TLabel;
@@ -16,8 +16,10 @@ type
     txtNome: TEdit;
     txtNasc: TEdit;
     txtSalario: TEdit;
+    btnReset: TButton;
     procedure btnCalcularLimiteClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure btnResetClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -25,7 +27,7 @@ type
   end;
 
 var
-  Form1: TForm1;
+  frmPrincipal: TfrmPrincipal;
 
 implementation
 
@@ -34,7 +36,7 @@ uses
 
 {$R *.dfm}
 
-procedure TForm1.btnCalcularLimiteClick(Sender: TObject);
+procedure TfrmPrincipal.btnCalcularLimiteClick(Sender: TObject);
 var
   Nome: String;
   DataNasc: String;
@@ -44,8 +46,8 @@ var
 begin
   lCredito := TCredito.Create;
   ///  fim credito
+
   pessoa2 := TCliente.Create;
-  Nome:= txtNome.Text;
   pessoa2.DataNascimento := txtNasc.Text;
   pessoa2.Salario := StrToCurr(txtSalario.Text);
 
@@ -53,10 +55,10 @@ begin
 
   try
 
-
-  pessoa2.Nome := Nome;
+  pessoa2.Nome := txtNome.Text;
   pessoa2.DataNascimento := txtNasc.Text	;
-  //pessoa2.Salario := Salario;
+
+
 
 
 
@@ -66,7 +68,7 @@ begin
   Memo1.Lines.Add('Cliente');
   Memo1.Lines.Add('Nome: ' +  pessoa2.Nome);
   Memo1.Lines.Add('Data Nascimento: ' +  pessoa2.DataNascimento);
-  Memo1.Lines.Add('Idade: ' +  pessoa2.Idade.ToString);
+  Memo1.Lines.Add('Idade: ' + pessoa2.Idade.Idade.ToString);
   Memo1.Lines.Add('Salário: ' +  pessoa2.Salario.ToString());
   Memo1.Lines.Add('Crédito: ' +  pessoa2.ValorCredito.ToString());
 finally
@@ -76,7 +78,15 @@ end;
 end;
 
 
-procedure TForm1.FormCreate(Sender: TObject);
+procedure TfrmPrincipal.btnResetClick(Sender: TObject);
+begin
+  txtNome.text := '';
+  txtNasc.text := '';
+  txtSalario.text := '';
+  Memo1.Lines.Clear;
+end;
+
+procedure TfrmPrincipal.FormCreate(Sender: TObject);
 begin
 Memo1.Lines.Clear;
 end;

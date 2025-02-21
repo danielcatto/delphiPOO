@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, pessoa;
 
 type
-  TForm1 = class(TForm)
+  TfrmPrincipal = class(TForm)
     Memo1: TMemo;
     btnCalcularLimite: TButton;
     Label1: TLabel;
@@ -27,50 +27,49 @@ type
   end;
 
 var
-  Form1: TForm1;
+  frmPrincipal: TfrmPrincipal;
 
 implementation
 
 uses
-  Cliente, CalculoLimiteCredito;
+  Cliente, CalculoLimiteCredito, CalcularIdade;
 
 {$R *.dfm}
 
-procedure TForm1.btnCalcularLimiteClick(Sender: TObject);
+procedure TfrmPrincipal.btnCalcularLimiteClick(Sender: TObject);
 var
   Nome: String;
   DataNasc: String;
    pessoa1 : TPessoa;
    pessoa2 : TCliente;
    lCredito : TCredito;
+   lCalculaIdade : TCalculaIdade;
 begin
   lCredito := TCredito.Create;
+  lCalculaIdade := TCalculaIdade.Create;
   ///  fim credito
+
   pessoa2 := TCliente.Create;
-  Nome:= txtNome.Text;
-  pessoa2.DataNascimento := txtNasc.Text;
-  pessoa2.Salario := StrToCurr(txtSalario.Text);
 
   ////credito
 
   try
 
+    pessoa2.Nome := txtNome.Text;
+    pessoa2.DataNascimento := txtNasc.Text	;
+    pessoa2.DataNascimento := txtNasc.Text;
+    pessoa2.Salario := StrToCurr(txtSalario.Text);
 
-  pessoa2.Nome := Nome;
-  pessoa2.DataNascimento := txtNasc.Text	;
-  //pessoa2.Salario := Salario;
+    pessoa2.Idade := lCalculaIdade.Calcula(pessoa2.DataNascimento);
+    lCredito.CalcCredito(pessoa2.Salario);
 
-
-
-  lCredito.CalcCredito(pessoa2.Salario);
-
-  pessoa2.ValorCredito := lCredito.Credito;
-  Memo1.Lines.Add('Cliente');
-  Memo1.Lines.Add('Nome: ' +  pessoa2.Nome);
-  Memo1.Lines.Add('Data Nascimento: ' +  pessoa2.DataNascimento);
-  Memo1.Lines.Add('Idade: ' +  pessoa2.Idade.ToString);
-  Memo1.Lines.Add('Salário: ' +  pessoa2.Salario.ToString());
-  Memo1.Lines.Add('Crédito: ' +  pessoa2.ValorCredito.ToString());
+    pessoa2.ValorCredito := lCredito.Credito;
+    Memo1.Lines.Add('Cliente');
+    Memo1.Lines.Add('Nome: ' +  pessoa2.Nome);
+    Memo1.Lines.Add('Data Nascimento: ' +  pessoa2.DataNascimento);
+    Memo1.Lines.Add('Idade: '   + pessoa2.Idade.ToString );
+    Memo1.Lines.Add('Salário: ' +  pessoa2.Salario.ToString());
+    Memo1.Lines.Add('Crédito: ' +  pessoa2.ValorCredito.ToString());
 finally
   pessoa2.free;
 end;
@@ -78,7 +77,7 @@ end;
 end;
 
 
-procedure TForm1.btnResetClick(Sender: TObject);
+procedure TfrmPrincipal.btnResetClick(Sender: TObject);
 begin
   txtNome.text := '';
   txtNasc.text := '';
@@ -86,7 +85,7 @@ begin
   Memo1.Lines.Clear;
 end;
 
-procedure TForm1.FormCreate(Sender: TObject);
+procedure TfrmPrincipal.FormCreate(Sender: TObject);
 begin
 Memo1.Lines.Clear;
 end;

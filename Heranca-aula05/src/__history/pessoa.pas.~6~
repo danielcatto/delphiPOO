@@ -2,7 +2,7 @@ unit pessoa;
 
 interface
 uses
-  System.SysUtils, CalcularIdade;
+  System.SysUtils, CalculaIdade;
 
 type TPessoa =class
   private
@@ -10,10 +10,12 @@ type TPessoa =class
   Nome: String;
   DataNascimento: String;
   Email : String;
-  Idade : Integer;
+  Idade: TCalcIDade;
 
 end;
 implementation
+
+{ TPessoa }
 
 
 end.

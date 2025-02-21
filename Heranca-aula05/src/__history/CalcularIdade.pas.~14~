@@ -1,0 +1,29 @@
+unit CalcularIdade;
+
+interface
+uses
+  System.SysUtils;
+type
+  TCalcIdade = class
+    private
+
+    FIdade: Integer;
+    public
+      property Idade: Integer read FIdade write FIdade;
+      procedure CalcIdade(DataNascimento: String);
+
+  end;
+implementation
+
+{ TCalcIdade }
+
+procedure TCalcIdade.CalcIdade(DataNascimento: string);
+begin
+   Idade := Trunc((now - StrToDate(DataNascimento)) / 365.25);
+end;
+
+{ TCalcIdade }
+
+
+
+end.

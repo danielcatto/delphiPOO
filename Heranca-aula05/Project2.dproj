@@ -105,6 +105,7 @@
         <DCCReference Include="src\pessoa.pas"/>
         <DCCReference Include="src\Cliente.pas"/>
         <DCCReference Include="src\CalculoLimiteCredito.pas"/>
+        <DCCReference Include="src\CalcularIdade.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

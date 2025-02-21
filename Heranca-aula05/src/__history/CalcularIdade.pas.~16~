@@ -1,0 +1,18 @@
+unit CalcularIdade;
+
+interface
+type
+  TCalculaIdade = class
+  public
+    function Calcula(const Valor: Integer): Integer;
+  end;
+
+implementation
+
+{ TCalculadora }
+
+function TCalculaIdade.Calcula(const Valor: Integer): Integer;
+begin
+  Result := Trunc((now - StrToDate(DataNascimento)) / 365.25);
+end;
+end.

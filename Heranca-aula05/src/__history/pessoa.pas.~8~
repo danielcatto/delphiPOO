@@ -10,10 +10,12 @@ type TPessoa =class
   Nome: String;
   DataNascimento: String;
   Email : String;
-  Idade : Integer;
+
 
 end;
 implementation
+
+{ TPessoa }
 
 
 end.

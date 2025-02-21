@@ -5,8 +5,7 @@ uses
   View.PRincipal in 'src\View.PRincipal.pas' {frmPrincipal},
   pessoa in 'src\pessoa.pas',
   Cliente in 'src\Cliente.pas',
-  CalculoLimiteCredito in 'src\CalculoLimiteCredito.pas',
-  CalcularIdade in 'src\CalcularIdade.pas';
+  CalculoLimiteCredito in 'src\CalculoLimiteCredito.pas';
 
 {$R *.res}
 

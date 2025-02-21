@@ -1,0 +1,33 @@
+unit CalcularIdade;
+
+interface
+uses
+  System.SysUtils;
+type
+  TCalcIdade = class
+    private
+    FDataNascimento: String;
+    FIdade: Integer;
+    public
+      property DataNascimento: String read FDataNascimento write FDataNascimento;
+      property Idade: Integer read FIdade write FIdade;
+
+      procedure CalcIdade(Data: String);
+
+  end;
+implementation
+
+{ TCalcIdade }
+
+
+
+procedure TCalcIdade.CalcIdade(DataNascimento: String);
+begin
+
+end;
+
+{ TCalcIdade }
+
+
+
+end.

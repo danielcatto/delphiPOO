@@ -11,7 +11,7 @@ type
       //property Salario : Currency read FSalario write FSalario;
       property Credito : Currency read FCredito write FCredito;
       procedure CalcCredito(const Value: Currency);
-      //procedure CalcCredito(const Value: Currency; Admissao: string);
+      procedure CalcCredito(const Value: Currency; Admissao: string);
 
 end;
 implementation
@@ -21,6 +21,13 @@ implementation
 procedure TCredito.CalcCredito(const Value: Currency);
 begin
   FCredito := Value * 0.30;
+end;
+
+
+
+procedure TCredito.CalcCredito(const Value: Currency; Admissao: string);
+begin
+
 end;
 
 end.
