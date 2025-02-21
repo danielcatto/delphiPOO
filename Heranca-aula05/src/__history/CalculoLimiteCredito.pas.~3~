@@ -1,0 +1,15 @@
+unit CalculoLimiteCredito;
+
+interface
+type
+  TCredito = class
+    private
+
+    public
+      Salario : Currency read FSalario write FSalario;
+
+
+end;
+implementation
+
+end.

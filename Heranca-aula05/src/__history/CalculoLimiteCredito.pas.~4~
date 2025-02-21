@@ -1,0 +1,23 @@
+unit CalculoLimiteCredito;
+
+interface
+type
+  TCredito = class
+    private
+    FSalario: Currency;
+
+    public
+      property Salario : Currency read FSalario write FSalario;
+      procedure CalcCredito(const Value: Currency);
+
+end;
+implementation
+
+{ TCredito }
+
+procedure TCredito.CalcCredito(const Value: Currency);
+begin
+  Result :=
+end;
+
+end.

@@ -1,0 +1,33 @@
+unit Classe.Testeconta;
+
+interface
+type
+  TContaBan = class
+  private
+    FNome: String;
+    FSaldo : Double;
+    function GetSaldo: Double;
+
+
+  public
+    { public declarations }
+    property Nome: String read FNome write FNome;
+    property Saldo: Double write FSaldo;
+    property Saldo: Double read GetSaldo;
+    procedure Depositar(Value: Double);
+  end;
+implementation
+
+{ TContaBan }
+
+procedure TContaBan.Depositar(Value: Double);
+begin
+  FSaldo := FSaldo + Value;
+end;
+
+function TContaBan.GetSaldo: Double;
+begin
+  Result := FSaldo;
+end;
+
+end.

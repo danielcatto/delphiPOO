@@ -1,0 +1,17 @@
+program Project2;
+
+uses
+  Vcl.Forms,
+  View.PRincipal in 'src\View.PRincipal.pas' {Form1},
+  pessoa in 'src\pessoa.pas',
+  Cliente in 'src\Cliente.pas',
+  CalculoLimiteCredito in 'src\CalculoLimiteCredito.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

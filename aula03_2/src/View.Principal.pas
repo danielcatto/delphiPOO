@@ -1,0 +1,60 @@
+unit View.Principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Classe.Testeconta;
+
+type
+  TForm1 = class(TForm)
+    Memo1: TMemo;
+    btnDepositar: TButton;
+    txtDespositar: TEdit;
+    Label1: TLabel;
+    Button1: TButton;
+    txtNome: TEdit;
+    procedure btnDepositarClick(Sender: TObject);
+  private
+    lConta: TContaBan; // Declaração da variável de instância
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+uses Classe.Pessoa;
+
+procedure TForm1.btnDepositarClick(Sender: TObject);
+var
+  lPessoa : TPessoa;
+  VDep : Double;
+  //nome: String;
+begin
+  lPessoa :=  TPessoa.Create;
+  lPessoa.Nome := txtNome.Text;
+  ShowMessage(lPessoa.Nome);
+  if not Assigned(lConta) then
+    lConta := TContaBan.Create;
+
+  VDep := StrToFloat(txtDespositar.Text);
+
+
+  lConta.Depositar(VDep);
+  Memo1.Lines.Clear;
+
+  Memo1.Lines.Add(lConta.Saldo.ToString);
+
+
+
+end;
+
+end.

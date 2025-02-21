@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/02/20 14:15:36.000.770,=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/02/20 14:16:13.000.135,C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\aula03_2\src\View.Principal.dfm</Transaction>
+    <Transaction>2025/02/20 14:16:13.000.135,C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\aula03_2\src\View.Principal.pas</Transaction>
+    <Transaction>2025/02/20 14:16:21.000.403,C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\Project2.dproj=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\aula03_2\Aula03.dproj</Transaction>
+    <Transaction>2025/02/20 14:16:27.000.109,=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\aula03_2\Unit1.pas</Transaction>
+    <Transaction>2025/02/20 14:20:15.000.534,C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\aula03_2\Unit1.pas=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\aula03_2\src\ContaBancaria.pas</Transaction>
+    <Transaction>2025/02/20 14:23:35.000.977,=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\aula03_2\Unit1.pas</Transaction>
+    <Transaction>2025/02/20 14:24:03.000.545,C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\aula03_2\Unit1.pas=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\aula03_2\src\Classe.Testeconta.pas</Transaction>
+    <Transaction>2025/02/20 19:14:16.384,=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\aula03_2\Unit1.pas</Transaction>
+    <Transaction>2025/02/20 19:14:32.218,C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\aula03_2\src\Classe.Pessoa.pas=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\aula03_2\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
