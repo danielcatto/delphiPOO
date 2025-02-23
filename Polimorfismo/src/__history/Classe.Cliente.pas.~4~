@@ -1,0 +1,32 @@
+unit Classe.Cliente;
+
+interface
+
+uses
+  System.SysUtils,
+  Classe.Pessoa;
+type
+  TCliente  = class(TPessoa)
+
+  private
+    FVAlorCredito: Currency;
+
+  public
+    property VAlorCredito: Currency read FVAlorCredito write FVAlorCredito;
+    function Receber(Value: Integer): String;
+
+
+end;
+implementation
+
+{ TCliente }
+
+
+{ TCliente }
+
+function TCliente.Receber(Value: Integer): String;
+begin
+  Result := Value.toString;
+end;
+
+end.

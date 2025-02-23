@@ -1,0 +1,19 @@
+unit Classe.Pessoa;
+
+interface
+uses
+  System.SysUtils;
+
+type TPessoa =class
+  private
+  public
+  Nome: String;
+  DataNascimento: String;
+  Email : String;
+  Idade : Integer;
+
+end;
+implementation
+
+
+end.

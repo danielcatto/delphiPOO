@@ -1,0 +1,38 @@
+unit Classe.Cliente;
+
+interface
+
+uses
+  System.SysUtils,
+  Classe.Pessoa;
+type
+  TCliente  = class(TPessoa)
+
+  private
+    FVAlorCredito: Currency;
+
+  public
+    property VAlorCredito: Currency read FVAlorCredito write FVAlorCredito;
+    function Receber(Value: Integer): String; override;
+    function Receber(Value: Currency): String; override;
+
+
+end;
+implementation
+
+{ TCliente }
+
+
+{ TCliente }
+
+function TCliente.Receber(Value: Integer): String;
+var
+  numero: integer;
+
+begin
+  numero := Value * 2;
+
+  Result := numero.ToString;
+end;
+
+end.
