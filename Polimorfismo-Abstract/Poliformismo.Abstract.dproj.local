@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/02/24 23:16:25.000.216,=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/02/24 23:16:53.000.672,C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\Polimorfismo-Abstract\src\View.Principal.dfm</Transaction>
+    <Transaction>2025/02/24 23:16:53.000.672,C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\Polimorfismo-Abstract\src\View.Principal.pas</Transaction>
+    <Transaction>2025/02/24 23:17:10.000.907,C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\Project2.dproj=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\Polimorfismo-Abstract\Poliformismo.Abstract.dproj</Transaction>
+    <Transaction>2025/02/24 23:18:50.000.811,=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\Polimorfismo-Abstract\Unit1.pas</Transaction>
+    <Transaction>2025/02/24 23:19:04.000.969,C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\Polimorfismo-Abstract\Unit1.pas=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\Polimorfismo-Abstract\src\Classe.Pessoa.pas</Transaction>
+    <Transaction>2025/02/24 23:19:26.000.090,=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\Polimorfismo-Abstract\Unit1.pas</Transaction>
+    <Transaction>2025/02/24 23:19:41.000.291,C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\Polimorfismo-Abstract\Unit1.pas=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\POO\Academira_do_codigo\Polimorfismo-Abstract\src\Classe.Cliente.pas</Transaction>
+  </Transactions>
+</BorlandProject>
