@@ -49,7 +49,7 @@ begin
     Cliente.VAlorCredito := 700;
 
     Memo1.Lines.Add('Nome: ' + Cliente.Nome + ' - Email: ' + Cliente.Email);
-    Memo1.Lines.Add('receber Integer dobra: ' + Cliente.Receber(45));
+    Memo1.Lines.Add('receber Integer dobra: ' + Cliente.Receber(45.5));
     Memo1.Lines.Add('valor credito currency subtrai: ' + Cliente.VAlorCredito.ToString());
 
   finally

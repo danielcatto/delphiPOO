@@ -47,14 +47,11 @@ begin
     Cliente.DataNascimento := '22/05/2014';
     Cliente.Email := 'vini6catto@gmail.com';
     Cliente.VAlorCredito := 700;
-    Cliente.Receber(5);
-
 
     Memo1.Lines.Add('Nome: ' + Cliente.Nome + ' - Email: ' + Cliente.Email);
-    Memo1.Lines.Add(Cliente.VAlorCredito.ToString());
-    Memo1.Lines.Add(Cliente.Receber(45));
-    Memo1.Lines.Add(Cliente.Receber(100));
-    Memo1.Lines.Add(Cliente.VAlorCredito.ToString());
+    Memo1.Lines.Add('receber Integer dobra: ' + Cliente.Receber(45));
+    Memo1.Lines.Add('valor credito currency subtrai: ' + Cliente.VAlorCredito.ToString());
+
   finally
     Pessoa.Free;
     Cliente.Free;

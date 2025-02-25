@@ -1,0 +1,29 @@
+unit Classe.Pessoa;
+
+interface
+uses
+  System.SysUtils ;
+type
+  TPessoa = class
+  private
+    FDataNascimento: string;
+    FNome: string;
+    property Nome: string read FNome write FNome;
+    property DataNascimento: string read FDataNascimento write FDataNascimento;
+
+    function Idade: Integer;
+  public
+
+
+
+  end;
+implementation
+
+{ TMyClass }
+
+function TMyClass.Idade: Integer;
+begin
+  Result := Trunc((now - StrToDate(FDataNascimento))     / 365.25);
+end;
+
+end.

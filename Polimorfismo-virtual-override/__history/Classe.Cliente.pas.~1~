@@ -1,0 +1,20 @@
+unit Classe.Cliente;
+
+interface
+
+uses
+  Classe.Pessoa;
+
+type
+  TCliente  = class(TPessoa)
+
+  private
+    Fname: string;
+
+  public
+  property CPF: string read Fname write Fname;
+
+  end;
+implementation
+
+end.
