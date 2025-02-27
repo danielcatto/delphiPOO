@@ -10,13 +10,13 @@ type
   TCliente  = class(TPessoa)
 
   private
-    Fname: string;
+    FCPF: string;
 
   public
-  property CPF: string read Fname write Fname;
-  function RetornaDados: String; override;
-  function Contrato: String; override;
-  end;
+    property CPF: string read FCPF write FCPF;
+    function RetornaDados: String; override;
+    function Contrato: String; override;
+    end;
 implementation
 
 { TCliente }
@@ -28,10 +28,8 @@ end;
 
 function TCliente.RetornaDados: String;
 begin
-  Result := 'Nome: ' + self.Nome +
-  ' Data Nascimento: ' + self.DataNascimento +
-  ' Idade: ' + self.Idade.ToString +
-  ' CPF: ' + self.CPF;
+  inherited;
+  Result := Dados + ' CPF: ' + self.CPF + ' Contrato: ' + self.Contrato;
 end;
 
 end.
