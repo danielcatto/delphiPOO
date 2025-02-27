@@ -32,9 +32,9 @@ var
   lCliente1, lCliente2, lCliente3 : TCliente;
   lPessoa1 : TPessoa;
 begin
-  lCliente1 := TCliente.Create  ;
-  lCliente2 := TCliente.Create ;
-  lCliente3 := TCliente.Create;
+  lCliente1 := TCliente.Create
+  lCliente2 := TCliente.Create
+  lCliente3 := TCliente.Create
 
 end;
 

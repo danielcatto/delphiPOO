@@ -1,4 +1,4 @@
-program ContrutoresDestrutores;
+program ConstrutoresDestrutores;
 
 uses
   Vcl.Forms,

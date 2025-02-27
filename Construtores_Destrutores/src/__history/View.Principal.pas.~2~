@@ -22,19 +22,12 @@ var
 
 implementation
 
-uses
-  Classe.Pessoa, Classe.Cliente;
-
 {$R *.dfm}
 
 procedure TForm1.Button1Click(Sender: TObject);
 var
-  lCliente1, lCliente2, lCliente3 : TCliente;
-  lPessoa1 : TPessoa;
+  lCliente : TPessoa;
 begin
-  lCliente1 := TCliente.Create  ;
-  lCliente2 := TCliente.Create ;
-  lCliente3 := TCliente.Create;
 
 end;
 
