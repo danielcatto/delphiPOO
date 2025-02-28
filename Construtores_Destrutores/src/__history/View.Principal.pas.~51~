@@ -80,7 +80,7 @@ begin
   lCliente2 := TCliente.Create('2daniel');
   lCliente3 := TCliente.Create;
   try
-   Memo2.Lines.Add(lCliente1.Nome);
+
 
 
   finally

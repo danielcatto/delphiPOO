@@ -75,12 +75,16 @@ var
   lCliente1, lCliente2, lCliente3 : TCliente;
   lPessoa1 : TPessoa;
 begin
+  lPessoa1 := TPessoa.Create;
+  lPessoa1.Nome := 'Samuel';
+  lPessoa1.DataNascimento := '28/12/2020';
+
+
   Memo2.clear;
-  lCliente1 := TCliente.Create;
-  lCliente2 := TCliente.Create('2daniel');
-  lCliente3 := TCliente.Create;
+
+
   try
-   Memo2.Lines.Add(lCliente1.Nome);
+
 
 
   finally

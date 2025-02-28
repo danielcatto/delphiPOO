@@ -77,10 +77,10 @@ var
 begin
   Memo2.clear;
   lCliente1 := TCliente.Create;
-  lCliente2 := TCliente.Create('2daniel');
+  lCliente2 := TCliente.Create;
   lCliente3 := TCliente.Create;
   try
-   Memo2.Lines.Add(lCliente1.Nome);
+
 
 
   finally

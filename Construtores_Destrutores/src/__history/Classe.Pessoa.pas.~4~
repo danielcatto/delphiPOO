@@ -23,7 +23,7 @@ type
     function Idade: Integer;
     function ManualClasse : String;
     function RetornaDados: String; virtual;    // virtual pode sobreescrever a function
-
+    function Contrato: String; virtual; abstract;
 
   end;
 implementation

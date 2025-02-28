@@ -12,27 +12,31 @@ type
   private
     FCPF: string;
     FEndereco: TEndereco;
-    FContrato: String;
-
 
   public
     constructor Create;  overload;
     constructor Create(Value: String); overload;
     constructor Create(Value: TPessoa); overload;
 
-    destructor Destroy;  override;
+    destructor Destroy;  reintroduce;
 
-    property Contrato: String read FContrato write FContrato;
     property CPF: string read FCPF write FCPF;
     property Endereco: TEndereco   read FEndereco write FEndereco;     //instanciado classe Classe.Endereço dentro da classe classe.cliente
 
     function RetornaDados: String; override;
-  end;
+
+
+
+    end;
 
 
 implementation
 
 { TCliente }
+
+
+
+
 
 
 constructor TCliente.Create(Value: String);
@@ -50,6 +54,7 @@ constructor TCliente.Create(Value: TPessoa);
 begin
   Nome := Value.Nome;
   DataNascimento := Value.DataNascimento;
+
 end;
 
 destructor TCliente.Destroy;
@@ -60,7 +65,7 @@ end;
 function TCliente.RetornaDados: String;
 begin
   //inherited;  //hera da classe Pai
-  Result := Dados + ' CPF: ' + self.CPF + ' Contrato: ' + self.Contrato + ' Herança inherited: ' + ClasseNome;
+  Result := Dados + ' CPF: ' + self.CPF + ' Contrato: ' + ' Herança inherited: ' + ClasseNome;
 end;
 
 end.

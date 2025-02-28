@@ -8,8 +8,8 @@ uses
 
 type
   TForm1 = class(TForm)
-    Memo1: TMemo;
     Button1: TButton;
+    Memo1: TMemo;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
@@ -22,13 +22,26 @@ var
 
 implementation
 
+uses
+  Classe.Cliente;
+
+
 {$R *.dfm}
+
+
 
 procedure TForm1.Button1Click(Sender: TObject);
 var
-  lCliente : TPessoa;
+  lCliente1 : TCliente;
 begin
+  lCliente1 := TCliente.Create;
+  lCliente1.Nome := 'daniel';
+  lCliente1.DataNascimento := '30/11/1951';
 
+
+
+  Memo1.Lines.Add('Cliente 1 ------------------------');
+  Memo1.Lines.Add(lCliente1.Nome + ' data nasc: ' + lCliente1.DataNascimento + ' idade: ' + lCliente1.Idade.ToString);
 end;
 
 end.

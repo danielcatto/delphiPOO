@@ -12,7 +12,6 @@ type
   private
     FCPF: string;
     FEndereco: TEndereco;
-    FContrato: String;
 
 
   public
@@ -20,14 +19,18 @@ type
     constructor Create(Value: String); overload;
     constructor Create(Value: TPessoa); overload;
 
-    destructor Destroy;  override;
+    destructor Destroy;  reintroduce;
+    function Contrato: string;
 
     property Contrato: String read FContrato write FContrato;
     property CPF: string read FCPF write FCPF;
     property Endereco: TEndereco   read FEndereco write FEndereco;     //instanciado classe Classe.Endereço dentro da classe classe.cliente
 
     function RetornaDados: String; override;
-  end;
+
+
+
+    end;
 
 
 implementation
@@ -46,10 +49,16 @@ begin
   Endereco := TEndereco.Create; //instanciado objeto da Classe.Endereco
 end;
 
+function TCliente.Contrato: string;
+begin
+
+end;
+
 constructor TCliente.Create(Value: TPessoa);
 begin
   Nome := Value.Nome;
   DataNascimento := Value.DataNascimento;
+
 end;
 
 destructor TCliente.Destroy;
