@@ -7,9 +7,13 @@ type
     FLogradouro: String;
     FNumero: String;
   public
-    constructor Create;
     property Logradouro: String read FLogradouro write FLogradouro;
     property Numero: String read FNumero write FNumero;
+
+    constructor Create; overload;
+  //  constructor Create(Logra, Num: String); overload;
+
+
 end;
 implementation
 
@@ -20,5 +24,10 @@ begin
   FLogradouro := 'sem endereço';
   FNumero := '0';
 end;
+{
+constructor TEndereco.Create(Logra, Num: String);
+begin
 
+end;
+ }
 end.

@@ -4,37 +4,40 @@ interface
 
 uses
   Classe.Pessoa, Classe.Endereco;
+
 type
   TCliente = class(TPessoa)
-    private
+  private
     FEndereco: TEndereco;
-    public
-    constructor Create;  overload;
-    constructor Create(Value: String); overload;
-    constructor Create(Value: TPessoa); overload;
-
+  public
+    constructor Create; overload;
+    constructor Create(vNome: String; vDataNascimento: String; Endereco: TEndereco; Numero: String); overload;
+    destructor Destroy; override;
     property Endereco: TEndereco read FEndereco write FEndereco;
-
   end;
-implementation
 
-{ TCliente }
+implementation
 
 constructor TCliente.Create;
 begin
-  Nome := 'Não informado';
+  inherited Create;
+  FEndereco := TEndereco.Create;
 end;
 
-constructor TCliente.Create(Value: String);
+constructor TCliente.Create(vNome: String; vDataNascimento: String; Endereco: TEndereco; Numero: String);
 begin
-  Nome := Value;
+  inherited Create;
+  Self.Nome := vNome;
+  Self.DataNascimento := vDataNascimento;
+  FEndereco := Endereco;
+  FEndereco.Numero := Numero;
 end;
 
-constructor TCliente.Create(Value: TPessoa);
+destructor TCliente.Destroy;
 begin
-  Nome := Value.Nome;
-  DataNascimento := Value.DataNascimento;
-
+  FEndereco.Free;
+  inherited Destroy;
 end;
 
 end.
+

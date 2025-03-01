@@ -10,6 +10,14 @@ type
   TForm1 = class(TForm)
     Button1: TButton;
     Memo1: TMemo;
+    txtNome: TEdit;
+    txtDataNascimento: TEdit;
+    txtLogradouro: TEdit;
+    txtNumero: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
@@ -23,39 +31,36 @@ var
 implementation
 
 uses
-  Classe.Cliente, Classe.Pessoa;
-
+  Classe.Cliente, Classe.Pessoa, Classe.Endereco;
 
 {$R *.dfm}
 
-
-
 procedure TForm1.Button1Click(Sender: TObject);
 var
-  lCliente1, lCliente2, lCliente3: TCliente;
-  lPessoa : TPessoa;
+   lCliente: TCliente;
+  lEndereco: TEndereco;
 begin
+  lEndereco := TEndereco.Create;
+  lEndereco.Logradouro := txtLogradouro.Text;
+  lEndereco.Numero := txtNumero.Text;
+  lCliente := TCliente.Create(txtNome.Text, txtDataNascimento.Text, lEndereco, lEndereco.Numero);
 
-  lPessoa := TPessoa.Create;
 
-  lCliente1 := TCliente.Create;
-  lCliente1.Nome := 'daniel';
-  lCliente1.DataNascimento := '30/11/1951';
-  Memo1.Lines.Add('Cliente 1 ------------------------');
-  Memo1.Lines.Add(lCliente1.Nome + ' data nasc: ' + lCliente1.DataNascimento + ' idade: ' + lCliente1.Idade.ToString);
+  try
 
-  lCliente2 := TCliente.Create('samuca');
-  Memo1.Lines.Add('Cliente 2 ------------------------');
-  Memo1.Lines.Add(lCliente2.Nome);
+    Memo1.Lines.Add('Cliente 1 ------------------------');
+    Memo1.Lines.Add('Nome' + ' ' + lCliente.Nome);
+    Memo1.Lines.Add('Data Nascimento: ' + lCliente.DataNascimento);
+    Memo1.Lines.Add('Idade: ' + lCliente.Idade.ToString);
+    Memo1.Lines.Add(lCliente.Endereco.Logradouro +' ' + lCliente.Endereco.Numero);
 
-  lCliente3 := TCliente.Create(lPessoa);
-  //lCliente3.Endereco.Logradouro := 'rua sem saida';
-  //lCliente3.Endereco.Numero := '001';
+    Memo1.Lines.Add('-----------------------------------');
+    Memo1.Lines.Add('');
 
-  Memo1.Lines.Add('Cliente 3 ------------------------');
-  //Memo1.Lines.Add(lCliente3.Nome);
-  Memo1.Lines.Add(lCliente3.Endereco.Logradouro);
-  Memo1.Lines.Add(lCliente3.Endereco.Numero);
+  finally
+    lCliente.Free;
+  end;
 end;
 
 end.
+
