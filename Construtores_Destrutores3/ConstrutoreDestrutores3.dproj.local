@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/02/22 21:40:11.000.424,=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/03/03 13:27:20.000.121,=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/03/03 13:28:17.000.512,C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Construtores_Destrutores3\src\View.Principal.pas=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/03/03 13:28:17.000.512,C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Construtores_Destrutores3\src\View.Principal.dfm=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2025/03/03 13:28:33.000.653,C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Construtores_Destrutores3\ConstrutoreDestrutores3.dproj=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2025/03/03 13:28:47.000.684,=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Construtores_Destrutores3\Unit1.pas</Transaction>
+    <Transaction>2025/03/03 13:29:01.000.121,C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Construtores_Destrutores3\src\Classe.Pessoa.pas=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Construtores_Destrutores3\Unit1.pas</Transaction>
+    <Transaction>2025/03/03 13:31:47.000.559,=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Construtores_Destrutores3\Unit1.pas</Transaction>
+    <Transaction>2025/03/03 13:32:45.000.903,C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Construtores_Destrutores3\src\Classe.Cliente.pas=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Construtores_Destrutores3\Unit1.pas</Transaction>
+    <Transaction>2025/03/03 13:34:29.000.231,=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Construtores_Destrutores3\Unit1.pas</Transaction>
+    <Transaction>2025/03/03 13:34:47.000.668,C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Construtores_Destrutores3\src\Classe.Endereco.pas=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Construtores_Destrutores3\Unit1.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="src"/>
+    <File Path="src\Classe.Cliente.pas"/>
+    <File Path="src\Classe.Endereco.pas"/>
+    <File Path="src\Classe.Pessoa.pas"/>
+    <File Path="src\View.Principal.pas"/>
+    <File Path="src\View.Principal.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>
