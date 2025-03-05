@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/02/22 21:40:11.000.424,=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/03/04 16:00:42.000.133,=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/03/04 16:01:55.000.147,C:\Users\daniel\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Projeto-Lista-Tarefas\src\ViewPrincipal.pas</Transaction>
+    <Transaction>2025/03/04 16:01:55.000.147,C:\Users\daniel\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Projeto-Lista-Tarefas\src\ViewPrincipal.dfm</Transaction>
+    <Transaction>2025/03/04 16:02:09.000.319,C:\Users\daniel\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Projeto-Lista-Tarefas\ListaTarefas.dproj</Transaction>
+    <Transaction>2025/03/04 16:04:28.821,=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Projeto-Lista-Tarefas\Unit1.pas</Transaction>
+    <Transaction>2025/03/04 16:04:55.790,C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Projeto-Lista-Tarefas\src\Views\ViewPrincipal.dfm=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Projeto-Lista-Tarefas\Unit1.dfm</Transaction>
+    <Transaction>2025/03/04 16:04:55.790,C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Projeto-Lista-Tarefas\src\Views\ViewPrincipal.pas=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Projeto-Lista-Tarefas\Unit1.pas</Transaction>
+    <Transaction>2025/03/04 16:10:35.961,=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Projeto-Lista-Tarefas\Unit1.pas</Transaction>
+    <Transaction>2025/03/04 16:15:07.004,C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Projeto-Lista-Tarefas\src\Model\listaTarefa.model.usuario.pas=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Projeto-Lista-Tarefas\Unit1.pas</Transaction>
+    <Transaction>2025/03/04 16:20:44.047,=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Projeto-Lista-Tarefas\Unit1.pas</Transaction>
+    <Transaction>2025/03/04 19:10:39.932,C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Projeto-Lista-Tarefas\src\Model\listaTarefa.model.tarefa.pas=C:\Users\daniel\Documents\Embarcadero\Studio\Projects\POO\delphiPOO\Projeto-Lista-Tarefas\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
